@@ -18,7 +18,7 @@ end
     users = User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Quote.famous_last_words, mail: Faker::Internet.email, age: rand(18..99))
 end
 
-20.times do     #cree 20 gossip en reference avec user
+20.times do     #cree 20 gossips en references avec user
    gossips = Gossip.create(title: Faker::Name.name, content: Faker::ChuckNorris.fact, user_id: rand(1..10))
 end
 
