@@ -15,7 +15,7 @@ require "faker"
 end
 
 10.times do        #cree 10 user avec une ville en reference
-    users = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Quote.famous_last_words, mail: Faker::Internet.email, age: rand(18..99), city_id:41)
+    users = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Quote.famous_last_words, mail: Faker::Internet.email, age: rand(18..99), city_id:1)
 end
 
 20.times do     #cree 20 gossips en references avec user

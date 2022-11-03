@@ -1,0 +1,16 @@
+ 
+
+<%= form_with( model:@gossip, url:gossips_path, method: :post, local: true) do |f| %> 
+  <div>
+    <label>Article title</label>
+    <%= f.text_field :title, autofocus: true %>
+  </div>
+
+  <div>
+    <label>Article content</label>
+    <%= f.text_area :content, autofocus: true %>
+  </div>
+  
+  <button type="submit">New</button>
+  <%= link_to "Back", root_path %>
+<%end%>

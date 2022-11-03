@@ -1,0 +1,19 @@
+<h1>register</h1>
+
+<%= form_tag url_for(action: 'create'), method:"post" do %>
+
+
+<%= label_tag 'Firstname :' %> <br/>
+    <%= text_field_tag 'first_name'%> <br/> 
+<%= label_tag 'lastname :' %> <br/>
+    <%= text_field_tag 'last_name'%> <br/> 
+<%= label_tag 'mail :' %> <br/>
+    <%= text_field_tag 'mail'%> <br/> 
+<%= label_tag 'age :' %> <br/>
+    <%= text_field_tag 'age'%> <br/>     
+<%= label_tag 'description :' %> <br/>
+    <%= text_field_tag 'description'%> <br/> 
+<%= label_tag 'password :' %> <br/>
+    <%= text_field_tag 'password_digest'%> <br/> 
+ <%= submit_tag "inscription" %>
+<% end %>   
